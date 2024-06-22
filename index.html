@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Max</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cell Max</h1>
+    </header>
+    <nav>
+        <button class="Boton" onclick="accion()">Menu</button>
+        <a href="store.html" class="bloque desaparece">Store</a>
+        <a href="promociones.html" class="bloque desaparece">Promociones</a>
+        <a href="contacto.html" class="bloque desaparece">Contactanos</a>
+        <a href="sobre.html" class="bloque desaparece">Sobre Nosotros</a>
+    </nav>
+    <section class="Max">
+
+        <section class="cell">
+        <h1>Mision</h1>
+        <p>
+            En Cell Max, nos dedicamos a proporcionar a nuestros clientes la mejor experiencia en tecnología móvil. Nuestra misión es ofrecer productos y servicios de calidad excepcional, así como un excelente servicio al cliente, con el fin de satisfacer todas las necesidades y expectativas de nuestros clientes.
+           <br> En Cell Max, nos esforzamos por mantenernos a la vanguardia de la innovación tecnológica, ofreciendo una amplia gama de dispositivos móviles de última generación, accesorios y servicios relacionados. Trabajamos con las principales marcas del mercado para garantizar que nuestros clientes tengan acceso a los productos más avanzados y de mayor calidad disponibles.
+
+           <br>Además, en Cell Max entendemos la importancia de la accesibilidad y la inclusión en el mundo digital. Por eso, nos comprometemos a ofrecer soluciones personalizadas y accesibles para todos nuestros clientes, independientemente de sus necesidades y capacidades.
+        </p>
+        </section>
+
+        <section class="cell">
+        <h1 >Vision</h1>
+        <p>
+            Nos esforzamos por ser uno de los mejores en el desarrollo de sitios web para ofrecer 
+            siempre a nuestros clientes las mejores soluciones para sus empresas. No basta 
+            con crear una tienda online, nosotros queremos mejorarla, hacerla eficiente, lograr 
+            un diseño adecuado y personal. Trabajamos por ofrecer una experiencia de 
+            compra en línea intuitiva y sin complicaciones que refleje los estándares de 
+            calidad y servicio de una tienda física de renombre.
+        </p>
+        </section>
+
+    </section>
+    <div class="compañia">
+        <h2>Compañias asociadas a nuestra pagina</h2>
+    </div>
+    <section class="logos">
+    <div  class="marca">
+        <img src="images/Samsung.png" alt="foto" width="40%">
+    </div>
+    <div  class="marca">
+        <img src="images/Xiaomi.png" alt="foto" width="30%">
+    </div>
+    <div  class="marca">
+        <img src="images/blu.png" alt="foto" height="40%">
+    </div>
+    </section>
+
+    <script>
+        function accion(){
+            var pele = document.getElementsByClassName("bloque");
+            for(var i = 0; i < pele.length; i++) {
+                pele[i].classList.toggle("desaparece");
+            }
+        }
+    </script>
+</body>
+</html>
